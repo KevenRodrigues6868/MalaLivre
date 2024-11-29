@@ -70,14 +70,5 @@ CREATE TABLE tb_aluguel (
   status VARCHAR(20)
 );
 
--- Servidor Local
-Para rodar o projeto localmente, você pode usar o XAMPP para configurar o servidor PHP e o banco de dados MySQL.
 
--- Baixe e instale o XAMPP.
-Inicie o Apache e o MySQL pelo painel de controle do XAMPP.
-Importe o banco de dados malalivre utilizando o PHPMyAdmin ou via linha de comando.
-Coloque os arquivos do projeto na pasta htdocs dentro do diretório de instalação do XAMPP.
-Acesse o projeto via http://localhost/[nome_do_projeto].
-Geração de Comprovante em PDF
-Para gerar o comprovante do aluguel em PDF, foi utilizada a biblioteca TCPDF. A geração do PDF é feita após a confirmação do aluguel, contendo os dados do usuário, o produto alugado, o valor e a data.
 
