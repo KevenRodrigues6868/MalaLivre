@@ -1,0 +1,733 @@
+/* Reset */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFF00; /* Cor de fundo amarela */
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+/* Campo de busca no navbar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 1; /* Ocupa o espaço disponível */
+    padding: 5px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.search-input::placeholder {
+    color: #999; /* Cor do texto do placeholder */
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Ícones no navbar */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Centralizar o conteúdo do corpo */
+.main-content {
+    max-width: 1200px;
+    margin: 60px auto; /* Espaço superior de 60px */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das linhas de malas */
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item-description {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Link "Mostrar mais" */
+.show-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-more-link {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.show-more-link:hover {
+    color: #0056b3;
+}
+/* Container do formulário de login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto; /* Aumenta a margem superior para distanciar do nav */
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+/* Título do formulário */
+.login-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Inputs de login */
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botão de envio */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do perfil */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #555;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo dos blocos de opções */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.option-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilo para a página mala.html */
+.product-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.product-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.rent-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.rent-button:hover {
+    background-color: #0056b3;
+}
+
+.product-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.product-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.other-options {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.carousel-item {
+    text-align: center;
+    min-width: 80px;
+}
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.carousel-item p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Seção "Outras opções" */
+.other-options {
+    margin-top: 30px;
+}
+
+.other-options h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap; /* Para ajustar em telas menores */
+}
+
+.carousel-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 150px; /* Define o tamanho dos itens */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.carousel-item p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.carousel-item .login-button {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Aumenta levemente o item ao passar o mouse */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+/* Container principal do produto */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Lado esquerdo: imagem */
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Lado direito: informações */
+.product-details {
+    flex: 2;
+    padding: 0 20px;
+}
+
+/* Linha vertical entre os lados */
+.product-container .product-image {
+    border-right: 2px solid #ddd; /* Linha vertical */
+    padding-right: 20px; /* Espaço interno para a borda */
+}
+
+/* Tabela de informações */
+.product-info-table {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.info-column p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Botão de alugar */
+.rent-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rent-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a linha de confirmação */
+.confirmation-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.checkbox-label {
+    flex: 1; /* Para ocupar espaço disponível */
+    font-size: 16px;
+    color: #333;
+}
+
+.check-button {
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.check-button:hover {
+    background-color: #0056b3;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #666;
+    margin-left: 20px;
+}
+
+.frete-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botão para continuar */
+.continue-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+    background-color: #0056b3;
+}
+
+/* Layout principal dividido */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Lado esquerdo */
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Opções de pagamento */
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Divisória vertical */
+.divider {
+    width: 2px;
+    background-color: #ddd;
+    height: auto;
+}
+
+/* Lado direito */
+.right-side {
+    flex: 2;
+    padding: 10px;
+}
+
+.right-side h3 {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+/* Tabela de resumo */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.summary-table td {
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Valor total */
+.total-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+/* Estilo para imagem de verificação */
+.verified-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mensagem de sucesso */
+.success-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745; /* Verde */
+}
+
+/* Botão de baixar comprovante */
+.download-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para imagem de verificação */
+.verified-img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mensagem de sucesso */
+.success-message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745; /* Verde */
+}
+
+/* Botão de baixar comprovante */
+.download-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela de produtos */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.product-table th, .product-table td {
+    padding: 12px 15px; /* Ajusta o padding das células */
+    text-align: left; /* Alinha o texto à esquerda */
+    border: 1px solid #ddd; /* Borda fina e suave */
+    font-size: 14px;
+    color: #333; /* Cor do texto */
+}
+
+.product-table th {
+    background-color: #f8f8f8; /* Cor de fundo dos cabeçalhos */
+    font-weight: bold; /* Deixa o texto dos cabeçalhos em negrito */
+    color: #333; /* Cor do texto dos cabeçalhos */
+    text-transform: uppercase; /* Letras maiúsculas para cabeçalhos */
+}
+
+.product-table tr:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+.product-table td {
+    word-wrap: break-word; /* Ajusta o conteúdo para não ultrapassar as células */
+}
+
+.product-table td, .product-table th {
+    min-width: 100px; /* Garantir que as colunas tenham uma largura mínima */
+}
+.product-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.product-table th, .product-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+}
+#perfil-page .login-container {
+    max-width: 500px; /* Aumente o valor conforme necessário */
+}
+/* Forçar todas as imagens das malas a terem um tamanho fixo */
+.item-img {
+    width: 100%;
+    height: 250px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem seja cortada para preencher o espaço */
+    border-radius: 5px;
+}
